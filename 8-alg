@@ -1,0 +1,22 @@
+Safety Algorithm
+1. Work and Finish be the vector of length m and n respectively,
+Work=Available and Finish[i] =False.
+2. Find an i such that both
+     Finish[i] =False
+     Need<=Work
+If no such I exists go to step 4.
+3. work= work + Allocation, Finish[i] =True;
+
+4. if Finish[1]=True for all I, then the system is in safe state. Resource request algorithm
+
+
+ 
+
+
+Let Request i be request vector for the process Pi, If request i=[j]=k, then process Pi wants k instances of resource type Rj.
+1. if Request<=Need I go to step 2. Otherwise raise an error condition.
+2. if Request<=Available go to step 3. Otherwise Pi must since the resources are available.
+3. Have the system pretend to have allocated the requested resources to process Pi by modifying the state as follows;
+    Available=Available-Request I;
+    Allocation I =Allocation +Request I; Need i=Need i-Request I;
+If the resulting resource allocation state is safe, the transaction is completed and process Pi is allocated its resources. However if the state is unsafe, the Pi must wait for Request i and the old resource-allocation state is restored.
