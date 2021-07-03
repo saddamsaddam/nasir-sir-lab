@@ -1,0 +1,10 @@
+ALGORITHM:
+Step1: Start the process.
+Step2: Declarevariables.
+Step3: Enter total memory size ms.
+
+Step4: Allocate memory for os.
+             Ms=ms-os
+Step5: Read the no partition to be divided n Partition size=ms/n.
+Step6: Read the process no and process size.
+Step 7: If process size is less than partition size allot alse blocke the process. While allocating update memory wastage-external fragmentation.
