@@ -1,0 +1,22 @@
+ALGORITHM
+
+
+1. Start the process
+
+2. Declare the size with respect to page length
+
+3. Check the need of replacement from the page to memory
+
+4. Check the need of replacement from old page to new page in memory
+
+5. Forma queue to hold all pages
+
+6. Insert the page require memory into the queue
+
+7. Check for bad replacement and page fault
+
+8. Get the number of processes to be inserted
+
+9. Display the values
+
+10. Stop the process
