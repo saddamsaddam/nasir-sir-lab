@@ -1,0 +1,44 @@
+Algorithm –
+
+semaphore array[0..4] fork ← [1, 1, 1, 1, 1]
+loop forever
+       p1 : think                
+       p2 : wait(fork[i])
+       p3 : wait(fork[i + 1])
+       p4 : eat
+       p5 : signal(fork[i])
+       p6 : signal(fork[i + 1])
+       
+       
+       semaphore array[0..4] fork ← [1, 1, 1, 1, 1]
+
+   semaphore room ← 4
+   loop forever
+       p1 : think                
+       p2 : wait(room)                        
+       p3 : wait(fork[i])                                  
+       p4 : wait(fork[i + 1])                                           
+       p5 : eat                                                
+       p6 : signal(fork[i])         
+       p7 : signal(fork[i + 1])                  
+       p8 : signal(room)
+       
+       For the first four philosophers –
+
+loop forever
+   p1 : think            
+   p2 : wait(fork[i])                     
+   p3 : wait(fork[i + 1])                              
+   p4 : eat                                   
+   p5 : signal(fork[i])                                            
+   p6: signal(fork[i + 1])
+   
+   For the fifth philosopher –
+
+loop forever
+   p1 : think            
+   p2 : wait(fork[0])                     
+   p3 : wait(fork[4])                              
+   p4 : eat                                   
+   p5 : signal(fork[0])                                            
+   p6 : signal(fork[4])
