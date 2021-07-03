@@ -1,0 +1,9 @@
+FCFS (First-Come-First-Served) algorithm services 
+the disk requests in the order in which they arrive. 
+Therefore, a request’s position in the queue is 
+unaffected by arriving requests. This ensures that a 
+request cannot be postponed indefinitely, but it also 
+means that FCFS might perform a long-winded seek 
+operation to service the next request, even though 
+another request in the queue is closer and can be 
+serviced faster.
