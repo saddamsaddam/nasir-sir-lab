@@ -1,0 +1,30 @@
+Algorithm for Single Level Directory Structure:
+Step 1:Start
+Step 2: Initialize values gd=DETECT,gm,count,i,j,mid,cir_x;
+Initialize character array fname[10][20];
+Step 3: Initialize graph function as
+Initgraph(& gd, &gm," c:/tc/bgi");
+Clear device();
+Step 4:set back ground color with setbkcolor();
+Step 5:read number of files in variable count.
+Step 6:if check i<count
+Step 7: for i=0 & i<count
+i increment;
+Cleardevice();
+setbkcolor(GREEN);
+read file name;
+setfillstyle(1,MAGENTA);
+Step 8: mid=640/count;
+cir_x=mid/3;
+bar3d(270,100,370,150,0,0);
+settextstyle(2,0,4);
+settextstyle(1,1);
+outtextxy(320,125,"rootdirectory");
+setcolor(BLUE);
+i++;
+Step 9:for j=0&&j<=i&&cir_x+=mid
+j increment;
+line(320,150,cir_x,250);
+fillellipse(cir_x,250,30,30);
+outtextxy(cir_x,250,fname[i]);
+Step 10: End
